@@ -1,0 +1,13 @@
+metric,value
+rows,779425
+columns,9
+missing_values,0
+duplicate_rows,0
+unique_invoices,36969
+unique_products,4631
+unique_customers,5878
+unique_countries,41
+minimum_invoice_date,2009-12-01 07:45:00
+maximum_invoice_date,2011-12-09 12:50:00
+total_revenue_gbp,"17,374,804.25"
+total_units_sold,"10,513,952"
