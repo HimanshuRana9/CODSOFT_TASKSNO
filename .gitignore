@@ -1,3 +1,4 @@
+# Environment and caches
 __pycache__/
 *.pyc
 .venv/
@@ -5,4 +6,18 @@ venv/
 .env
 .ipynb_checkpoints/
 .DS_Store
+
+# Large datasets (Download via documented scripts/instructions to preserve reproducibility)
+*.xlsx
+*.xls
+*.zip
+*.tar.gz
+**/data/raw/*.csv
+**/data/processed/*.csv
+
+# Temporary output files
 outputs/*.tmp
+
+# Power BI temporary and autosave files
+*.pbix.tmp
+*~*.pbix

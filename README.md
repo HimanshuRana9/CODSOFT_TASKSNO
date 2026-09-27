@@ -30,7 +30,7 @@
 | :---: | :--- | :--- | :--- | :---: |
 | **01** | [**Data Cleaning & Preprocessing**](Task_1_Data_Cleaning/) | End-to-end audit, deduplication, schema standardization, and business validation on 1.06M retail records. | Python, Pandas, NumPy, Matplotlib |  **Completed** |
 | **02** | [**Exploratory Data Analysis**](Task_2_EDA/) | Statistical summaries, distributions, seasonality, sales velocity, and anomaly detection. | Pandas, Seaborn, Matplotlib |  **Completed** |
-| **03** | [**Data Visualization Dashboard**](Task_3_Data_Visualization/) | Interactive KPIs, revenue trends, category performance, and geographic distribution. | Matplotlib, Seaborn, Plotly | 🔄 Next Up |
+| **03** | [**Data Visualization Dashboard**](Task_3_Data_Visualization/) | Interactive KPIs, revenue trends, category performance, and geographic distribution. | Power BI Desktop, DAX, Power Query | ✅ **Completed** |
 | **04** | [**Customer Data Analysis**](Task_4_Customer_Analysis/) | Customer purchasing behavior, RFM segmentation, and high-value customer identification. | Pandas, Scikit-learn, Seaborn | 📋 Planned |
 | **05** | [**Web Data Extraction & Analysis**](Task_5_Web_Data_Extraction/) | Public structured web scraping, data sanitation, exploratory analysis, and insights. | Requests, BeautifulSoup, Pandas | 📋 Planned |
 
@@ -71,12 +71,14 @@ CODSOFT_TASKSNO/
 │   └── report/
 │
 ├── Task_3_Data_Visualization/         # TASK 3: Data Visualization Dashboard
-│   ├── README.md
-│   ├── data/
-│   ├── notebooks/
-│   ├── dashboard/
+│   ├── README.md                      # Task 3 overview & dashboard documentation
+│   ├── powerbi/
+│   │   ├── Online_Retail_Sales_Dashboard.pbix # Completed Power BI Desktop dashboard
+│   │   ├── README.md                  # Power BI guide & how-to-open instructions
+│   │   └── screenshots/               # Dashboard screenshots
 │   ├── outputs/
-│   └── report/
+│   │   └── visualization_report.md    # Formal visual analytics report
+│   └── screenshots/                   # Dashboard previews
 │
 ├── Task_4_Customer_Analysis/          # TASK 4: Customer Data Analysis & RFM
 │   ├── README.md
@@ -124,6 +126,25 @@ The **UCI Online Retail II** raw dataset contained **1,067,371 rows** spanning t
 ```
 
 ![Task 1 Quality Summary](Task_1_Data_Cleaning/outputs/data_cleaning_summary.png)
+
+---
+
+## Task 3 — Data Visualization Dashboard
+
+Task 3 focuses on transforming the validated, multi-year Online Retail dataset into an executive business dashboard built in **Microsoft Power BI Desktop**. Building upon the data cleaning in Task 1 and exploratory data analysis in Task 2, Task 3 visualizes sales performance, seasonal trajectories, customer engagement, and product revenue contributors.
+
+### Key Visualizations & Features
+- **Executive KPI Cards:** Total Revenue, Total Orders Display, Total Customers Display, Total Products Display, Total Units Sold, and Average Order Value.
+- **Monthly Revenue Trend (Line Chart):** Continuous time-series tracking monthly revenue and seasonality peaks across the 24-month horizon.
+- **Revenue by Country (Horizontal Bar Chart):** Geographic market breakdown comparing UK domestic sales with international export destinations.
+- **Top 10 Products by Revenue (Horizontal Bar Chart):** Highlighting the highest-earning product catalog SKUs.
+- **Revenue by Year (Column / Bar Chart):** Annual revenue comparison across operating fiscal periods.
+- **Interactive Slicers:** Country filter and Date Range slider for real-time dynamic filtering and visual cross-filtering across the entire dashboard.
+
+### Dashboard File & Documentation
+- **Power BI File:** [`Task_3_Data_Visualization/powerbi/Online_Retail_Sales_Dashboard.pbix`](Task_3_Data_Visualization/powerbi/Online_Retail_Sales_Dashboard.pbix)
+- **Detailed Documentation:** [Task 3 README](Task_3_Data_Visualization/README.md)
+- **Visual Analytics Report:** [Task 3 Visualization Report](Task_3_Data_Visualization/outputs/visualization_report.md)
 
 ---
 
