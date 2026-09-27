@@ -173,6 +173,20 @@ Task 4 performs customer purchasing behavior analysis and customer segmentation 
 
 ---
 
+## 🌐 Task 5 Highlight: Web Data Extraction & Analysis
+
+Task 5 implements an end-to-end web scraping, structured data cleaning, and exploratory data analysis pipeline using **Python, BeautifulSoup4, Requests, Pandas, Matplotlib, and Seaborn**. Data was harvested ethically from the public sandbox [Books to Scrape](https://books.toscrape.com) across 50 catalogue pages.
+
+### Key Highlights & Deliverables
+- **Automated Web Scraper:** Built a modular crawler in [`Task_5_Web_Data_Extraction/scraper/web_scraper.py`](Task_5_Web_Data_Extraction/scraper/web_scraper.py) with category taxonomy mapping, rate limiting, and defensive UTF-8 encoding handling.
+- **Clean Structured Dataset:** Extracted 812 book records across 21 genres with zero missing values or duplicate records, saved to [`Task_5_Web_Data_Extraction/data/processed/scraped_books.csv`](Task_5_Web_Data_Extraction/data/processed/scraped_books.csv).
+- **Multi-Sheet Excel Workbook:** Automated export to [`Task_5_Web_Data_Extraction/outputs/scraped_books.xlsx`](Task_5_Web_Data_Extraction/outputs/scraped_books.xlsx) featuring *Books*, *Summary*, and *Category Analysis* sheets.
+- **Exploratory Data Analysis:** Analyzed price distributions, star rating proportions, category inventory depth, and price-rating correlations in [`Task_5_Web_Data_Extraction/scripts/web_data_analysis.py`](Task_5_Web_Data_Extraction/scripts/web_data_analysis.py).
+- **Interactive Notebook:** [`Task_5_Web_Data_Extraction/notebooks/Task5_EDA.ipynb`](Task_5_Web_Data_Extraction/notebooks/Task5_EDA.ipynb)
+- **Comprehensive Report:** [Task 5 Web Extraction Report](Task_5_Web_Data_Extraction/report/web_extraction_report.md)
+
+---
+
 ## 💻 Installation & Reproduction Guide
 
 ### 1. Clone the Repository
