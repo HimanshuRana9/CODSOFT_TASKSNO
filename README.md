@@ -31,7 +31,7 @@
 | **01** | [**Data Cleaning & Preprocessing**](Task_1_Data_Cleaning/) | End-to-end audit, deduplication, schema standardization, and business validation on 1.06M retail records. | Python, Pandas, NumPy, Matplotlib |  **Completed** |
 | **02** | [**Exploratory Data Analysis**](Task_2_EDA/) | Statistical summaries, distributions, seasonality, sales velocity, and anomaly detection. | Pandas, Seaborn, Matplotlib |  **Completed** |
 | **03** | [**Data Visualization Dashboard**](Task_3_Data_Visualization/) | Interactive KPIs, revenue trends, category performance, and geographic distribution. | Power BI Desktop, DAX, Power Query | ✅ **Completed** |
-| **04** | [**Customer Data Analysis**](Task_4_Customer_Analysis/) | Customer purchasing behavior, RFM segmentation, and high-value customer identification. | Pandas, Scikit-learn, Seaborn | 📋 Planned |
+| **04** | [**Customer Data Analysis**](Task_4_Customer_Analysis/) | Customer purchasing behavior, behavioral segmentation, and high-value cohort analysis. | Python, Pandas, Matplotlib, Seaborn | ✅ **Completed** |
 | **05** | [**Web Data Extraction & Analysis**](Task_5_Web_Data_Extraction/) | Public structured web scraping, data sanitation, exploratory analysis, and insights. | Requests, BeautifulSoup, Pandas | 📋 Planned |
 
 ---
@@ -80,13 +80,20 @@ CODSOFT_TASKSNO/
 │   │   └── visualization_report.md    # Formal visual analytics report
 │   └── screenshots/                   # Dashboard previews
 │
-├── Task_4_Customer_Analysis/          # TASK 4: Customer Data Analysis & RFM
-│   ├── README.md
-│   ├── data/
+├── Task_4_Customer_Analysis/          # TASK 4: Customer Data Analysis
+│   ├── README.md                      # Comprehensive Task 4 guide
 │   ├── notebooks/
+│   │   └── 04_customer_analysis.ipynb # Interactive customer analytics notebook
 │   ├── scripts/
+│   │   └── customer_analysis.py       # Automated customer segmentation pipeline
 │   ├── outputs/
+│   │   ├── customer_summary.csv       # Customer profile metrics (5,878 rows)
+│   │   ├── customer_segments.csv      # Customer segment assignments (5,878 rows)
+│   │   ├── country_customer_analysis.csv # Geographic distribution (41 countries)
+│   │   ├── segment_summary.csv        # Segment performance matrix (6 segments)
+│   │   └── charts/                    # High-resolution visual charts
 │   └── report/
+│       └── customer_analysis_report.md# Formal customer analysis report
 │
 ├── Task_5_Web_Data_Extraction/        # TASK 5: Web Data Extraction & Analysis
 │   ├── README.md
@@ -145,6 +152,24 @@ Task 3 focuses on transforming the validated, multi-year Online Retail dataset i
 - **Power BI File:** [`Task_3_Data_Visualization/powerbi/Online_Retail_Sales_Dashboard.pbix`](Task_3_Data_Visualization/powerbi/Online_Retail_Sales_Dashboard.pbix)
 - **Detailed Documentation:** [Task 3 README](Task_3_Data_Visualization/README.md)
 - **Visual Analytics Report:** [Task 3 Visualization Report](Task_3_Data_Visualization/outputs/visualization_report.md)
+
+---
+
+## 👥 Task 4 Highlight: Customer Data Analysis
+
+Task 4 performs customer purchasing behavior analysis and customer segmentation using **Python, Pandas, Matplotlib, and Seaborn**. Built on the validated Online Retail transactions dataset, this analysis profiles 5,878 distinct customer accounts across 41 countries.
+
+### Key Analytical Findings & Features
+- **Customer Profiling:** Reconciled 779,425 transactions into 5,878 customer profiles tracking revenue, order count, average order value (AOV), inventory units, and recency.
+- **Geographic Analysis:** Evaluated domestic vs. export market dynamics, establishing the UK as the volume core (91% of customers) and international markets (EIRE, Netherlands, Australia) as high-AOV wholesale drivers.
+- **Transparent Behavioral Segmentation:** Implemented an empirical rule-based framework categorizing customers into 6 distinct behavioral tiers (*High-Value Frequent*, *High-Value Occasional*, *High-Value Lapsed*, *Steady Repeat*, *Occasional Active*, *Dormant / Inactive*).
+- **Most Valuable Customer Cohorts:** Identified that the top 20.02% of customers (*High-Value Frequent*) generate 71.42% (£12.41M) of total portfolio turnover.
+- **Actionable Marketing Strategies (Bonus):** Formulated targeted marketing campaigns for VIP loyalty, wholesale cadence acceleration, lapsed win-back, and dormant reactivation.
+- **Age Limitation Documented:** Transparently noted that age-based segmentation was not performed as the source dataset contains no demographic age attributes.
+
+- **Interactive Notebook:** [`Task_4_Customer_Analysis/notebooks/04_customer_analysis.ipynb`](Task_4_Customer_Analysis/notebooks/04_customer_analysis.ipynb)
+- **Detailed Documentation:** [Task 4 README](Task_4_Customer_Analysis/README.md)
+- **Customer Analysis Report:** [Task 4 Report](Task_4_Customer_Analysis/report/customer_analysis_report.md)
 
 ---
 

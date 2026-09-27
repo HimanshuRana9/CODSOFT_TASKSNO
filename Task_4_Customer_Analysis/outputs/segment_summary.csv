@@ -1,0 +1,7 @@
+CustomerSegment,CustomerCount,TotalRevenue,TotalOrders,TotalUnits,AverageRevenuePerCustomer,AverageOrdersPerCustomer,AverageOrderValue,AverageRecencyDays,CustomerShare,RevenueShare
+High-Value Frequent,1177,12409720.48,22375,7296990,10543.52,19.01,494.81,32.8,20.02,71.42
+Steady Repeat,1272,1523518.83,6526,959442,1197.73,5.13,250.6,53.2,21.64,8.77
+Dormant / Inactive,2241,1242995.69,4751,709195,554.66,2.12,279.15,426.6,38.13,7.15
+High-Value Lapsed,159,1093495.32,1456,904614,6877.33,9.16,1336.33,361.9,2.71,6.29
+High-Value Occasional,134,673556.95,537,365765,5026.54,4.01,1710.38,61.7,2.28,3.88
+Occasional Active,895,431516.98,1324,277946,482.14,1.48,330.38,61.8,15.23,2.48
